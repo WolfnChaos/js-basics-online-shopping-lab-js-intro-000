@@ -19,6 +19,10 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length === 0) {
     return `Your shopping cart is empty.`
+  } else if (cart.length === 1) {
+    var item1 = item
+    var price = Math.floor(Math.random() * Math.floor(100));
+    return `In your cart, you have ${item1} at ${price}.`
   }
 }
 
